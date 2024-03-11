@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-central {
+        
+            height: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .imagem-lateral {
+            max-width: 30%;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            margin: 10px;
+            vertical-align: top; 
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .video-central {
+                max-width: 100%;
+            }
+            .imagem-lateral {
+                max-width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Título Centralizado</h1>
+        <h2>Subtítulo Centralizado</h2>
+        <iframe class="video-central" width="937" height="523" src="https://www.youtube.com/embed/A2bhCTbIJIM" title="Barbie™ e O Segredo das Fadas | Filme Completo (HD) | Dublado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="imagem-lateral" src="roxo3.png" alt="Imagem Lateral 1">
+        <img class="imagem-lateral" src="roxo3.png" alt="Imagem Lateral 2">
+    </div>
+</body>
+</html>
+
